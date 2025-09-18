@@ -1,2 +1,2 @@
 # Prueba
-Repositorio de prueba para ejecutar Fronted + IA
+Repositorio de prueba para ejercitar Fronted + IA
