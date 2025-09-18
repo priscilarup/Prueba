@@ -1,0 +1,362 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', Arial, sans-serif;
+    background: linear-gradient(135deg, #070606 60%, #C8102E 100%);
+    color: #D4AF37;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+canvas#particles-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    position: relative;
+    z-index: 1;
+}
+.hero-content {
+    text-align: center;
+}
+.hero-img {
+    width: 320px;
+    max-width: 60%;
+    border-radius: 24px;
+    box-shadow: 0 0 32px #C8102E, 0 0 16px #57aeff;
+    margin-bottom: 24px;
+    margin-top: 25px;
+}
+.hero-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 0 12px #C8102E, 0 0 24px #D4AF37;
+    margin-bottom: 18px;
+}
+.hero-title .gold {
+    color: #f1d26a;
+    text-shadow: 0 0 12px #D4AF37, 0 0 24px #C8102E;
+}
+.cta-button {
+    background: linear-gradient(90deg, #C8102E 0%, #D4AF37 100%);
+    color: #070606;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 14px;
+    font-size: 1.3rem;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 0 24px #C8102E88, 0 0 8px #D4AF37;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    outline: none;
+    margin-top: 10px;
+}
+.cta-button:hover, .cta-button.neon:hover {
+    background: linear-gradient(90deg, #D4AF37 0%, #C8102E 100%);
+    transform: scale(1.08);
+    box-shadow: 0 0 32px #D4AF37, 0 0 16px #C8102E;
+}
+.cta-button.pulse {
+    animation: pulse 1.8s infinite;
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 24px #C8102E88, 0 0 8px #D4AF37; }
+    50% { box-shadow: 0 0 40px #D4AF37, 0 0 24px #C8102E; }
+    100% { box-shadow: 0 0 24px #C8102E88, 0 0 8px #D4AF37; }
+}
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    padding-bottom: 25px;
+    color: #ffe9a1;
+    text-align: center;
+    margin-bottom: 18px;
+    text-shadow: 0 0 8px #C8102E, 0 0 16px #D4AF37;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.card {
+    background: linear-gradient(120deg, #070606 80%, #C8102E 100%);
+    border: 2px solid #D4AF37;
+    border-radius: 16px;
+    padding: 22px 18px;
+    width: 220px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 16px #C8102E55;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: pulse 2s infinite;
+}
+.card:hover {
+    transform: translateY(-12px) scale(1.04);
+    box-shadow: 0 0 32px #D4AF37, 0 0 16px #C8102E;
+}
+.card-icon {
+    width: 48px;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 0 8px #D4AF37);
+}
+.cards a {
+  color: inherit;
+  text-decoration: #D4AF37;
+  font-weight: 600; /* opcional */
+}
+
+.cards a:hover {
+  color: #D4AF37;
+}
+.testimonials {
+    margin-bottom: 32px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.todosTestimonial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.testimonial {
+    background: #070606cc;
+    border-radius: 12px;
+    padding: 16px 25px;
+    margin-bottom: 14px;
+    font-size: 1.05rem;
+    color: #fff;
+    box-shadow: 0 0 12px #C8102E55;
+    border: 1.5px solid #D4AF37;    
+    width: 50%;
+   
+}
+.testimonial .stars {
+    color: #D4AF37;
+    text-shadow: 0 0 8px #D4AF37, 0 0 16px #C8102E;
+    font-size: 1.3em;
+    margin-bottom: 8px;
+}
+.testimonial .author {
+    font-weight: 700;
+    color: #C8102E;
+    font-size: 0.95em;
+}
+.offer {
+    background: linear-gradient(90deg, #C8102E 60%, #070606 100%);
+    padding: 24px;
+    text-align: center;
+    border: 3px solid #D4AF37;
+    border-radius: 16px;
+    box-shadow: 0 0 32px #C8102E88;
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 32px;
+}
+.offer .gold {
+    color: #D4AF37;
+}
+.timer {
+    font-size: 2rem;
+    color: #D4AF37;
+    font-family: 'Orbitron', monospace;
+    text-shadow: 0 0 8px #D4AF37, 0 0 16px #C8102E;
+    letter-spacing: 2px;
+    margin: 12px 0 18px 0;
+}
+.comparison-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 32px auto;
+    border-collapse: collapse;
+    font-size: 1.05em;
+    font-style: italic;
+    font-weight: 600;
+    box-shadow: 0 0 16px #C8102E55;
+}
+.comparison-table th, .comparison-table td {
+    border: 2px solid #C8102E;
+    padding: 12px;
+    text-align: center;
+    background: #070606;
+    color: #D4AF37;
+}
+.comparison-table th {
+    background: #C8102E;
+    color: #fff;
+    text-shadow: 0 0 8px #D4AF37;
+}
+.guarantee {
+    background: #070606cc;
+    border-radius: 14px;
+    padding: 18px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    color: #D4AF37;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    box-shadow: 0 0 12px #C8102E55;
+    border: 1.5px solid #D4AF37;
+    width: 100%;
+}
+.guarantee .section-title {
+    margin-bottom: 0;   /* menos margen */
+    margin-top: 10px;
+    padding-bottom: 0;    /* anulamos el padding que los separa */
+}
+.buy-form {
+    margin: 24px auto 50px auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #070606cc;
+    border-radius: 16px;
+    padding: 18px 16px;
+    box-shadow: 0 0 16px #C8102E55;
+    border: 2px solid #C8102E;
+}
+.buy-label {
+    color: #D4AF37;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1em;
+    text-shadow: #000000 2px 2px 8px;
+}
+.buy-input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #C8102E;
+    background: #070606;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    box-shadow: 0 0 8px #D4AF3755;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+.buy-input:focus {
+    border: 2px solid #D4AF37;
+    box-shadow: 0 0 16px #D4AF37;
+}
+.payment-methods {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0 12px 0;
+    font-size: em;
+    color: #D4AF37;
+}
+.payment-methods img {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 8px #C8102E55;
+    padding: 2px;
+}
+
+.footer {
+    background: #070606;
+    color: #D4AF37;
+    padding: 35px 100%;
+    width: 75%;
+    text-align: center;
+    border-top: 2px solid #C8102E;
+}
+.social-links {
+    margin-bottom: 12px;
+}
+.social-links a img {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+    filter: drop-shadow(0 0 8px #D4AF37);
+    transition: filter 0.2s;
+}
+
+.social-links a:hover img {
+    filter: drop-shadow(0 0 16px #C8102E);
+}
+.subscribe-form {
+    margin: 18px auto 0 auto;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.subscribe-form input[type="email"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #C8102E;
+    font-size: 1em;
+    background: #070606;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0 8px #D4AF3755;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+.subscribe-form input[type="email"]:focus {
+    border: 2px solid #D4AF37;
+    box-shadow: 0 0 16px #D4AF37;
+}
+.subscribe-form button {
+    margin-top: 4px;
+}
+.copyright {
+    margin-top: 18px;
+    font-size: 0.95em;
+    color: #D4AF37;
+}
+
+@media (max-width: 900px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        margin-bottom: 24px;
+        width: 90%;
+    }
+    .hero-img {
+        width: 90vw;
+    }
+    .comparison-table {
+        font-size: 0.95em;
+    }
+}
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    .section-title {
+        font-size: 1.2rem;
+    }
+    .card {
+        padding: 16px 8px;
+    }
+}
+footer .copyright a {
+  color: #D4AF37; /* el color que desees */
+  text-decoration: none; /* para quitar el subrayado, si quieres */
+}
+footer .copyright a:hover {
+  color: #c70039; /* color al pasar el mouse */
+}

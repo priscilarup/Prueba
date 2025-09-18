@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auriculares Bluetooth Gamer | Poder en tu juego, estilo en tu mundo</title>
+    <!-- Tipografías Orbitron y Noto Sans JP -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="particles-bg"></canvas>
+    <section class="hero">
+        <div class="hero-content">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_717712-MLA92011842775_092025-O.webp" alt="Auriculares Gamer RGB" class="hero-img" />
+            <h1 class="hero-title">Poder en tu juego,<br><span class="gold">estilo en tu mundo</span></h1>
+        </div>
+    </section>
+    <section class="benefits">
+        <h2 class="section-title">¿Por qué elegirlos?</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://e7.pngegg.com/pngimages/353/282/png-clipart-surround-sound-computer-icons-acoustic-wave-others-text-rectangle.png" alt="Sonido 3D" class="card-icon" />
+                <h3>Sonido envolvente 3D</h3>
+                <p>Sumérgete en tus juegos con audio espacial y máxima nitidez.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3103/3103446.png" alt="Batería" class="card-icon" />
+                <h3>Batería de larga duración</h3>
+                <p>Hasta 30 horas de juego sin interrupciones.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.icon-icons.com/185/PNG/512/BlueTooth_22685.png" alt="Bluetooth" class="card-icon" />
+                <h3>Bluetooth 5.0</h3>
+                <p>Conexión estable y rápida, sin cables ni retrasos.</p>
+            </div>
+            <div class="card">
+                <img src="https://png.pngtree.com/png-vector/20250106/ourmid/pngtree-vibrant-rgb-gaming-pc-setup-png-image_15074212.png" alt="LED RGB" class="card-icon" />
+                <h3>Diseño gamer con <br> LED RGB</h3>
+                <p>Estilo único con luces personalizables para tu setup.</p>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2 class="section-title">Lo que dicen los gamers</h2>
+        <div class="todosTestimonial">
+            <div class="testimonial">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>“El sonido es brutal y las luces RGB hacen que mi setup se vea increíble.”</p>
+                <span class="author">- Alex, 17 años</span>
+            </div>
+            <div class="testimonial">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>“La batería dura todo el día y el Bluetooth nunca falla.”</p>
+                <span class="author">- Sofía, 16 años</span>
+            </div>
+            <div class="testimonial">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>“Son súper cómodos y el diseño gamer es lo mejor.”</p>
+                <span class="author">- Leo, 19 años</span>
+            </div>
+        </div>
+        
+    </section>
+    <section class="offer">
+        <h2 class="section-title gold">¡Oferta limitada!</h2>
+        <p>Descuento especial solo por hoy</p>
+        <div class="timer" id="timer"></div>
+        <button class="cta-button neon" id="cta-offer">Aprovecha el Descuento</button>
+    </section>
+    <section class="comparison">
+        <h2 class="section-title">¿Cómo se comparan?</h2>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Auriculares Gamer</th>
+                    <th>Auriculares Comunes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sonido 3D</td>
+                    <td>✔️</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <td>Batería 30h</td>
+                    <td>✔️</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <td>Bluetooth 5.0</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Luces LED RGB</td>
+                    <td>✔️</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <td>Diseño gamer</td>
+                    <td>✔️</td>
+                    <td>❌</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="guarantee">
+        <h2 class="section-title">Garantía total</h2>
+        <p>30 días de prueba o devolución garantizada. ¡Compra sin riesgos!</p>
+    </section>
+    
+    <section>
+        <form class="buy-form">
+                <label for="nombre" class="buy-label">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre gamer" class="buy-input">
+                <label for="direccion" class="buy-label">Dirección de envío:</label>
+                <input type="text" id="direccion" name="direccion" required placeholder="Dirección completa" class="buy-input">
+                <label for="telefono" class="buy-label">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Tu número" class="buy-input">
+                <div class="payment-methods">
+                    <span>Métodos de pago:</span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="Visa" title="Visa" width="36">
+                    <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Mastercard" title="Mastercard" width="36">
+                    <img src="https://cdn-icons-png.flaticon.com/512/349/349221.png" alt="PayPal" title="PayPal" width="36">
+                    <img src="https://images.seeklogo.com/logo-png/34/1/mercado-pago-logo-png_seeklogo-342347.png" alt="MercadoPago" title="MercadoPago" width="36">
+                </div>
+                <button type="submit" class="cta-button pulse">Comprar Ahora</button>
+            </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://wa.me/123456789" target="_blank" title="WhatsApp"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
+            <a href="https://instagram.com/" target="_blank" title="Instagram"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+            <a href="https://tiktok.com/" target="_blank" title="TikTok"><img src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" alt="TikTok"></a>
+        </div>
+        <form class="subscribe-form">
+            <label for="email">Suscríbete para recibir ofertas:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo gamer" required>
+            <button type="submit" class="cta-button neon">Suscribirme</button>
+        </form>
+        <p class="copyright">&copy; 2025 <a href="about.html" target="_blank" title="Priscila Rupcic">Priscila Rupcic</a>. Todos los derechos reservados. </p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
